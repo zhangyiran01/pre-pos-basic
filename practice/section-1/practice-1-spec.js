@@ -1,15 +1,13 @@
-/*global collectSameElements*/
 'use strict';
 
 describe('practice-1-1', () => {
 
-  const collectionA = ['a', 'e', 'h', 't', 'f', 'c', 'g', 'b', 'd'];
-  const collectionB = ['a', 'd', 'e', 'f'];
+  const collection = [1, 3, 5, 7, 9, 2];
 
-  it('选出A集合中与B集合中相同的元素', () => {
+  it('从数组中选一个数返回', () => {
 
-    const result = collectSameElements(collectionA, collectionB);
+    const result = find(collection, 3);
 
-    expect(result).toEqual(['a', 'e', 'f', 'd']);
+    expect(result).toEqual(3);
   });
 });
